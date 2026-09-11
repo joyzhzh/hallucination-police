@@ -1,0 +1,6 @@
+$ shasum -a 256 corpus.json
+44b734e5c6fd8d5e51c0c5b2b19a4c7dbd1400f228ff325693193147ad85e697  corpus.json
+$ git log --oneline -1
+0b44ad4 Rebuild the parser fixtures
+$ python3 -m pytest -q
+312 passed in 18.44s

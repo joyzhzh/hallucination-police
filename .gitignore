@@ -1,0 +1,26 @@
+# Compiled Python. .pyc files embed the absolute path of the source they were
+# compiled from, so committing them would put local filesystem paths in the
+# repository.
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# Editor and backup droppings
+*.swp
+*~
+*.bak
+*.orig
+*.tmp
+
+# This skill writes its own outputs beside the file it audits. Never commit an
+# audit run: reports embed verbatim spans of whatever was audited, and the
+# pre-repair backups are copies of it.
+#
+# Anchored to the repository root so templates/REPORT.md -- which is part of
+# the skill -- is still tracked.
+*.prepolice-*
+/REPORT.md
+/ledger.jsonl
+*.ledger.jsonl
